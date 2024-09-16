@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsigned Integer Division and Polynomial Division</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .container {
+        margin-bottom: 30px;
+      }
+      .output {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Unsigned Integer Division</h2>
+      <label for="numerator">Numerator:</label>
+      <input type="number" id="numerator" value="27" min="0" />
+      <label for="denominator">Denominator:</label>
+      <input type="number" id="denominator" value="4" min="1" />
+      <button onclick="divideUnsignedIntegers()">Divide</button>
+      <div class="output" id="unsigned-output"></div>
+    </div>
+
+    <div class="container">
+      <h2>Polynomial Division</h2>
+      <label for="dividend-poly"
+        >Dividend Polynomial (comma separated coefficients):</label
+      >
+      <input type="text" id="dividend-poly" value="1, -3, 0, 2" />
+      <label for="divisor-poly"
+        >Divisor Polynomial (comma separated coefficients):</label
+      >
+      <input type="text" id="divisor-poly" value="1, -1" />
+      <button onclick="dividePolynomials()">Divide</button>
+      <div class="output" id="polynomial-output"></div>
+    </div>
+
+    <script src="js/div_uint.js"></script>
+    <script src="js/div_polynomial.js"></script>
+  </body>
+</html>
